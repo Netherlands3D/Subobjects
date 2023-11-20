@@ -28,7 +28,7 @@ namespace Netherlands3D.SubObjects
             }
         }
 
-        internal static void ApplyColorsToAll(Dictionary<string, Color> colorMap)
+        public static void ApplyColorsToAll(Dictionary<string, Color> colorMap)
         {
             Debug.Log("start coloring all");
             if (mappings == null)
@@ -42,7 +42,7 @@ namespace Netherlands3D.SubObjects
             }
         }
 
-        private static void ApplyColors(Dictionary<string, Color> colorMap, ObjectMapping mapping)
+        public static void ApplyColors(Dictionary<string, Color> colorMap, ObjectMapping mapping)
         {
             Debug.Log("coloring");
             Debug.Log("mapcount "+ colorMap.Count);
